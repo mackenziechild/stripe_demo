@@ -16,6 +16,18 @@
   </article>
   <aside id="details-aside" class="col-sm-4">
 	  <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</a>
+    <%= form_tag charges_path do %>
+      <article>
+        <label class="amount">
+          <span>Amount: $5.00</span>
+        </label>
+      </article>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-description="A month's subscription"
+              data-amount="500"></script>
+    <% end %>
 	  <ul id="details-infobox" class="list-group">
 	    <li class="list-group-item active clearfix">DETAILS</li>
 	    <li class="list-group-item">You'll get one video</li>
