@@ -13,8 +13,17 @@
 
 
 <body>
+	<div id="content" class="container">
+    <header id="content-header">
+      <div id="price-container">
+        <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+      </div>
+      <%= image_tag('header-image.jpg', id: "content-header-img", alt: "Learn Growth Hacking" ) %>
+    </header>
 
-<%= yield %>
+		<%= yield %>
+
+	</div>
 
 </body>
 </html>
