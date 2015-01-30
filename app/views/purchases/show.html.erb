@@ -1,3 +1,24 @@
-<p>This is your purchase</p>
+<section id="content-receipt" class="clearfix">
+  <div id="receipt-container">
+    <div class="dotmatrix left"></div>
+    <div id="receipt-content">
+      <h4 id="receipt-title">Thank You!</h4>
+      <p><strong>RECEIPT</strong></p>
+      <div id="receipt-details" class="row clearfix">
+        <div class="col-sm-8 receipt-left">
+          <p><strong class="font-weight-heavy">Growth Hacking</strong><br/> <span class="font-weight-light">Crash Course</span></p>
+        </div>
+        <div class="col-sm-4">
+          $4.99
+        </div>
+      </div>
 
-<p>Your purchase is <%= @purchase.inspect %></p>
+      <a href="https://s3.amazonaws.com/om-stripe-demo/me_profile.jpg"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
+      <footer id="receipt-footer">
+        <small>Your purchase is complete. We hope you enjoy it!</small>
+      </footer>
+    </div>
+    <div class="dotmatrix right"></div>
+  </div>
+  <div id="receipt-shadow"></div>
+</section>
